@@ -1,0 +1,138 @@
+.footer ul li:before {
+	display: none;
+	content:"";
+	width: 0px;
+	height: 3px;
+	background: linear-gradient(90deg, #E94057 0%, #F27121 100%);
+	border-radius: 3px;
+	position: absolute;
+	
+	
+	animation-duration: 0.5s; 
+}
+
+
+
+.footer ul li:nth-child(1):hover:before {
+	content:"";
+	display: block;
+	width: 75px;
+	top:52px;
+	animation-name: anim1;		
+}
+.footer ul li:nth-child(2):hover:before {
+	content:"";
+	display: block;
+	width:58px;
+	top:52px;
+	animation-name: anim2;	
+}
+.footer ul li:nth-child(3):hover:before {
+	content:"";
+	display: block;
+	width:44px;
+	top:52px;
+	animation-name: anim3;
+}
+.footer ul li:nth-child(4):hover:before {
+	content:"";
+	display: block;
+	width:33px;
+	top:52px;
+	animation-name: anim4;
+}
+@keyframes anim1{
+	from {
+		width: 0px;
+	}
+	to {
+		width: 75px;
+
+	}
+}
+@keyframes anim2{
+	from {
+		width: 0px;
+	}
+	to {
+		width: 58px;
+
+	}
+}
+@keyframes anim3{
+	from {
+		width: 0px;
+	}
+	to {
+		width: 44px;
+
+	}
+}
+@keyframes anim4{
+	from {
+		width: 0px;
+	}
+	to {
+		width: 33px;
+
+	}
+}
+img[src="image/Язык.svg"] {
+	animation-name: yazik;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: ease;
+	
+
+}
+@keyframes yazik {
+	
+
+
+	50% {
+	transform: translateX(-20px) rotate(20deg) translateY(-1px);
+
+	}
+
+
+
+}
+input[name="free"]:hover, input[name="10/month"]:hover {
+	background-color: transparent;
+	transition-duration: 0.7s;
+
+}
+.tariff-1:hover, .tariff-2:hover, .tariff-3:hover {
+	box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.25);
+	transition-duration: 0.3s;
+}
+input[name="download"]:hover, input[name="download2"]:hover {
+	background: transparent;
+	border: 3px solid #F27121;
+	transition-duration: 100s;
+	transition-property: background;
+
+}
+img[src="image/dino-lefthand-footer.svg"] {
+	animation-name: left-hand-footer;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+
+}
+img[src="image/dino-righthand-footer.svg"] {
+	animation-name: right-hand-footer;
+	animation-duration: 3s;
+	animation-delay: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+
+}
+
+@keyframes left-hand-footer {
+	50% { transform: rotate(-25deg) translateY(5px) translateX(-7px);  }
+}
+@keyframes right-hand-footer {
+	50% {transform: rotate(25deg)  translateX(9px);}
+}
